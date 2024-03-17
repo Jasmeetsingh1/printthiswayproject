@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f3f3;
+}
+
+/* Style the header */
+.header {
+  background-color: #f7f3f3;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #151414;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #e8e5e2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #faf7f7;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:#0a0a09">FAQS </h1>
+  
+</div>
+
+<div class="topnav">
+  <a href="main4.html">HOME</a>
+  <a href="aboutusprintthisway.html">ABOUT US</a>
+  <a href="FAQ.HTML">FAQS</a>
+  <a href="signup.html" style="float:right">SIGNUP/LOGIN</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2></h2>
+    <p></p>
+  </div>
+  
+  <div class="column middle">
+    <h1></h1>
+    <h2>How does Print this way work?</h2>
+    <p><ol>
+        <li>Login to Print this way webpage</li>
+        <li>Upload your documents to be printed</li>
+        <li>Choose from different customisations available - B/W or Colour, Portrait or Landscape</li>
+        <li>Checkout to place the order</li>
+        <li>Get your documents at your doorsteps in minutes</li>
+        <li>Your documents are deleted once printed</li>
+
+    </ol></p>
+    <h2>Where can I print documents near me?</h2>
+    <p>Currently, we serve select pin-codes only in Bengaluru. </p>
+    <h2>What printing options can I choose from?</h2>
+    <p>What printing options can I choose from?</p>
+    <p><ul>
+        <li>Black & White, Colour</li>
+        <li>Portrait, Landscape</li>
+        <li>Paper size: All</li>
+    </ul></p>
+    <h2>What file formats can I print?</h2>
+    <p>You can upload documents in any of the popular file formats like JPG, JPEG, PNG, PDF and many more.</p>
+    <h2>Are my documents stored & handled securely?</h2>
+    <p>Your files are automatically printed at the dark store near you, Safely picked and packed in a sealed envelope by the Store Team and handed over to a delivery partner. Your documents are deleted from our servers once printed.</p>
+</div>
+  
+<div class="column side">
+  <h2></h2>
+  <p>.</p>
+</div>
+</div>
+
+<div class="footer">
+<p><b></b></p>
+</div>
+
+</body>
+</html>

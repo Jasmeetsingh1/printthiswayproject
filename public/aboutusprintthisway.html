@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f3f3;
+}
+
+/* Style the header */
+.header {
+  background-color: #f7f3f3;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #080707;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f5f3f1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #fef8f8;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:#090909">About us</h1>
+  
+</div>
+
+<div class="topnav">
+  <a href="main4.html">HOME</a>
+  <a href="aboutusprintthisway.html">ABOUT US</a>
+  <a href="FAQ.HTML">FAQ</a>
+  <a href="signup.html" style="float:right">SIGNUP/LOGIN</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2></h2>
+    <p></p>
+  </div>
+  
+  <div class="column middle">
+    <h1>Welcome to print this way! -Where Imagination Meets Precision!</h1>
+
+
+    <p>At Print This Way, we believe in transforming your ideas into tangible, high-quality prints that speak volumes. We are not just a printing company; we are your creative partner on the journey to bring your visions to life.</p>
+    <h2>Who we are:</h2>
+    <p>Print This Way is a cutting-edge printing solution provider committed to delivering excellence in every print. With a passion for craftsmanship and a dedication to customer satisfaction, we have established ourselves as a trusted name in the printing industry.</p>
+    <h2>What Sets Us Apart:</h2>
+    <p><b>1. Unparalleled Quality:</b> Our commitment to quality unwavering. We employ state-of-the-art printing technology and use premium materials to ensure that each print meets the highest standards.</p>
+    <p><b>2. Endless Possibilities:</b> From business cards to banners, and everything in between, we offer a diverse range of printing services. Our goal is to provide you with the tools to express your unique identity.</p>
+    <p><b>3. Customer-Centric Approach:</b> Your satisfaction is our priority. Our experienced team is here to guide you through the printing process, offering personalized assistance and solutions tailored to your needs.</p>
+    <p><b>4. Innovation at Every Turn:</b> In a rapidly evolving digital landscape, we stay ahead of the curve. Our commitment to innovation ensures that you have access to the latest printing techniques and design trends.</p>
+    <h2>Why Choose Print This Way:</h2>
+    <p><ul>
+        <li><b>Reliability:</b> Count on us to deliver your prints on time, every time.</li>
+        <li><b>Affordability:</b> Quality prints shouldn't break the bank. We offer competitive pricing without compromising on excellence.</li>
+        <li><b>Environmental Responsibility:</b> We are committed to eco-friendly practices. Our printing processes prioritize sustainability, making us a responsible choice for your printing needs.</li>
+        <li><b>Passion for Print:</b> We are not just in the business of printing; we are passionate about the power of print to convey messages, tell stories, and make a lasting impression.</li>
+    </ul>
+        </p>
+        <p>Join us on this journey of creative expression and print perfection. At Print This Way, we are not just printing; we are crafting experiences. Your vision, our expertise – let's print it the right way, Print This Way!</p>
+        <h2>Talk to Us</h2>
+            <p>If you would like to know more about us, email us at care@printthisway.in and we'll answer your queries. Remember, we go the extra mile to bring innovative ideas that make printing and gifting easy and fun. Try us and experience the difference!</p>
+  </div>
+  
+  <div class="column side">
+    <h2></h2>
+    <p>.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p><b>FOLLOW US</b></p>
+</div>
+</body>
+</html>
+  

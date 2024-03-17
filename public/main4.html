@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Main Page</title>
+    <style>
+   
+  
+  
+  
+  
+   .button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: rgb(3, 14, 21);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+   
+   
+   
+   
+   
+   
+   
+   
+   .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+
+.fa-instagram {
+  background: #ca0fb4;
+  color: white;
+}
+* {
+  box-sizing: border-box;
+}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #f8f4f4;/*change*/
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #052360ed;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .navbar a:hover {
+  background-color: #faf6f600;
+  color: rgb(0, 0, 0);
+}
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #ccc;
+            margin: 20px 50px;
+            display: flex; */
+            /* justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Ensures the image does not overflow the circle */
+        }
+        .circle img {
+            width: 100%;
+            object-fit: cover; /* Ensures the image covers the entire circle */
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .navbar div {
+                margin-bottom: 10px;
+            }
+            .navbar button {
+                margin-top: 10px;
+            }
+            .content {
+                padding: 10px;
+            }
+        }
+    
+        @media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div>
+            <a href="main4.html"><B>HOME</B></a>
+            <a href="aboutusprintthisway.html"><B>ABOUT US</B></a>
+            <a href="FAQ.HTML"><B>FAQS</B></a>
+            
+        </div>
+        <div>
+            <A href="signup.html"><button class="button">
+                Sign In / Login
+                <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                  <path
+                    clip-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </button></A>
+        </div>
+    </div>
+    <div class="content">
+        <div style="display: flexbox; justify-items: center; align-content: center;">
+            <img src="print.png" alt="printthis" width="100%">
+        </div>
+        <div class="circle-container">
+            <div class="circle">
+            <a href="dropdownfileupload.html"><img src="upload.jpeg" alt="Circle Image 1"></a>
+                <!-- <p>Upload your Image</p> -->
+            </div>
+            <div class="circle">
+               <a href="profile.html" target="_blank"> <img src="courier-man-carry-package-box-delivery-service-online-shopping-in-flat-illustration-isolated-in-white-background-vector.jpg" alt="Circle Image 2"></a>
+                <!-- <p>Place your Order</p> -->
+            </div>
+            <div class="circle">
+                <img src="4-43885_courier-parcel-clip-art-parcel-delivery-png-transparent.png" alt="Circle Image 3">
+                <!-- <p>Unbox Happiness</p> -->
+            </div>
+        </div>
+        <div style="display: flex; gap: 70px;">
+            <p style="border">upload your image </p>
+            <p> place your order</p>
+            <p> unbox the happiness</p>
+
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Your Website Name. All rights reserved.
+        <h3>Follow us</h3>
+      <p>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+       <a href="https://twitter.com/?lang=en-in" class="fa fa-twitter"></a>
+       
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+       
+      </p>
+    </div>
+</body>
+</html>

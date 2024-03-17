@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Webpage</title>
+    <style>
+        /* CSS styles as before */
+        * {
+        font-family: serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f8f6f6;
+        font-family: serif;
+        min-height: 100vh;
+      }
+
+      nav {
+        background-color: #555;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      nav div {
+        color: white;
+      }
+
+      nav a:hover {
+        color: #422e05;
+      }
+
+      .signup-login-btn {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 15px;
+        background-color: #555;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .your-profile-button:hover {
+        background-color: #422e05;
+        color: #fff;
+      }
+
+      .content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .box {
+        width: 80%;
+        max-width: 300px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .file-upload-container {
+        width: 100%;
+        padding: 20px;
+        border: 2px dashed #ccc;
+        background-color: #f9f9f9;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+
+      .file-input {
+        display: none;
+      }
+
+      .file-label {
+        color: #333;
+        font-weight: bold;
+      }
+
+      .progress-container {
+        width: 100%;
+        height: 8px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        margin-top: 10px;
+        overflow: hidden;
+        border-radius: 5px;
+      }
+
+      .progress-bar {
+        height: 100%;
+        background-color: #4caf50;
+        width: 0;
+        transition: width 1s ease; /* Slow down the progress bar */
+      }
+
+      .progress-text {
+        margin-top: 5px;
+      }
+
+      /* Additional styles for the cart section */
+      .cart {
+        width: 100%;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 2px dashed #ccc;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .add-to-cart-btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #555;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .add-to-cart-btn:hover {
+        background-color: #422e05;
+      }
+    </style>
+</head>
+<body>
+<nav>
+    <div>
+        <a href="main4.html" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black">Home</a>
+      <a href="aboutusprintthisway.html"class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black">About Us</a>
+      <a href="FAQ.HTML" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-black">FAQS</a>
+    </div>
+    <a href="profile.html" class="your-profile-button">your profile</a>
+</nav>
+
+<div class="content">
+    <h1 style="font-family: serif">Upload Your Files</h1>
+</div>
+<div style="display: flex; align-items: center; justify-content: center">
+    <div class="box">
+        <!-- File upload container -->
+        <form id="file-upload-form" enctype="multipart/form-data" method="POST" action="/upload">
+          <div
+          class="file-upload-container"
+          onclick="document.getElementById('file-input-1').click()"
+        >
+                <input type="file" name="file" class="file-input" id="file-input-1" onchange="handleFileUpload('file-input-1')" />
+                <label class="file-label" id="file-label-1">Click or Drop files here</label>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar-1"></div>
+                </div>
+                <div class="progress-text" id="progress-text-1">0%</div>
+            </div>
+            <button type="submit"  class="add-to-cart-btn" >Upload File</button>
+        </form>
+    </div>
+</div>
+
+    <script>
+
+
+    function handleFileUpload(inputId) {
+        const fileInput = document.getElementById(inputId);
+        const fileLabel = document.getElementById("file-label-" + inputId.charAt(inputId.length - 1));
+
+        if (fileInput.files.length > 0) {
+            const file = fileInput.files[0];
+            fileLabel.textContent = "File: " + file.name;
+        } else {
+            fileLabel.textContent = "Click or Drop files here";
+        }
+    }
+  
+  
+
+</script>
+     
+</body>
+</html>
+
